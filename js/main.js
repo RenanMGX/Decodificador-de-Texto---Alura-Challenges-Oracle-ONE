@@ -16,10 +16,31 @@ function response(mod){
         cripto(text)
     }
     else if (mod == 'descripto'){
-        alert('Descriptografar')
+        descripto(text)
     }
 }
 
 function cripto(text){
-    document.getElementById('content__tertiary__text').innerHTML = text
+    text = text.replace('e', 'enter')
+    text = text.replace('i', 'imes')
+    text = text.replace('a', 'ai')
+    text = text.replace('o', 'ober')
+    text = text. replace('u', 'ufat')
+    document.getElementById('response').innerHTML = text
+}
+
+function descripto(text){
+    text = text.replace('enter', 'e')
+    text = text.replace('imes', 'i')
+    text = text.replace('ai', 'a')
+    text = text.replace('ober', 'o')
+    text = text.replace('ufat', 'u')
+    document.getElementById('response').innerHTML = text
+}
+
+function copiar(){
+    let textCopia = document.getElementById('response').innerHTML
+    navigator.clipboard.writeText(textCopia)
+    console.log("texto copiado")
+    alert("texto copiado")
 }
