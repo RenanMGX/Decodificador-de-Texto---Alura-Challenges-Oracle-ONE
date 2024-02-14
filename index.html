@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Alura Challenge</title>
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./assets/Logo.png">
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="content__primary">
+                    <div class="content__primary__textBox">
+                        <textarea id="text_area" placeholder="Digite seu texto aqui"></textarea>
+                    </div>
+                    <div class="content__primary_alert">
+                        <p><img src="./assets/bi_exclamation-circle-fill.png"> Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="content__primary__buttons">
+                        <button onclick="response('cripto')">Criptografar</button>
+                        <button onclick="response('descripto')">Descriptografar</button>
+                    </div>
+                </div>
+                <div class="content__secondary" id="content__secondary">
+                    <div class="content__secondary__img" >
+                        <img src="./assets/High quality products 1 1.svg"> 
+                    </div>
+                    <div class="content__secondary_text">
+                        <h1 id="msg_notfound"></h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+                <div class="content__tertiary" id="content__tertiary" style="display: none;">
+                    <div class="content__tertiary__text" id="content__tertiary__text">
+                        test
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    <script src="./js/main.js"></script>
+    </body>
+</html>
