@@ -12,6 +12,7 @@ function response(mod){
 
     }
 
+    document.getElementById('text_area').value = ''
     if (mod == 'cripto'){
         cripto(text)
     }
